@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
@@ -29,12 +30,12 @@
                 <fieldset id = "gender">
 
                     <legend id = "gender-legend">Gender</legend><br>
-                    <input type = "radio" id = "male" name = "gender" value = "male"><label for = "male"> Male</label>
-                    <input type = "radio" id = "female" name = "gender" value = "female"><label for = "female"> Female</label>
+                    <input type = "radio" id = "male" name = "gender" value = "male" class = "radio"><label for = "male"> Male</label>
+                    <input type = "radio" id = "female" name = "gender" value = "female" class = "radio"><label for = "female"> Female</label>
 
                 </fieldset>
 
-                <br><br>
+                <br>
 
                 <label for = "dropdown" id = "dropdown-label"> Which COVID-19 vaccine have you taken? </label><br>
                 <select id = "dropdown">
@@ -55,23 +56,42 @@
                 <fieldset>
                     
                     <legend id = "symptom-legend">Did you have any of the following symptoms, within a week of the COVID-19 vaccination?</legend><br>
-                    <input type = "checkbox" id = "pain" value = "pain" name = "symptom">               <label for = "pain">Pain on the arm where you got the shot</label><br>
-                    <input type = "checkbox" id = "redness" value = "redness" name = "symptom">         <label for = "redness">Redness on the arm where you got the shot</label><br>
-                    <input type = "checkbox" id = "swelling" value = "swelling" name = "symptom">       <label for = "swelling">Swelling on the arm where you got the shot</label><br>
-                    <input type = "checkbox" id = "tiredness" value = "tiredness" name = "symptom">     <label for = "tiredness">Tiredness</label><br>
-                    <input type = "checkbox" id = "headache" value = "headache" name = "symptom">       <label for = "headache">Headache</label><br>
-                    <input type = "checkbox" id = "muscle-pain" value = "muscle-pain" name = "symptom"> <label for = "muscle-pain">Muscle Pain</label><br>
-                    <input type = "checkbox" id = "chills" value = "chills" name = "symptom">           <label for = "chills">Chills</label><br>
-                    <input type = "checkbox" id = "fever" value = "fever"name = "symptom">              <label for = "fever">Fever</label><br>
-                    <input type = "checkbox" id = "nausea" value = "nausea" name = "symptom">           <label for = "nausea">Nausea</label><br>
+                    <input type = "checkbox" id = "pain" value = "pain" name = "symptom" class = "checkbox">               
+                    <label for = "pain">Pain on the arm where you got the shot</label><br>
+
+                    <input type = "checkbox" id = "redness" value = "redness" name = "symptom" class = "checkbox">         
+                    <label for = "redness">Redness on the arm where you got the shot</label><br>
+                    <input type = "checkbox" id = "swelling" value = "swelling" name = "symptom" class = "checkbox">       
+                    <label for = "swelling">Swelling on the arm where you got the shot</label><br>
+                    
+                    <input type = "checkbox" id = "tiredness" value = "tiredness" name = "symptom" class = "checkbox">     
+                    <label for = "tiredness">Tiredness</label><br>
+                    
+                    <input type = "checkbox" id = "headache" value = "headache" name = "symptom" class = "checkbox">       
+                    <label for = "headache">Headache</label><br>
+                    
+                    <input type = "checkbox" id = "muscle-pain" value = "muscle-pain" name = "symptom" class = "checkbox"> 
+                    <label for = "muscle-pain">Muscle Pain</label><br>
+                    
+                    <input type = "checkbox" id = "chills" value = "chills" name = "symptom" class = "checkbox">           
+                    <label for = "chills">Chills</label><br>
+                    
+                    <input type = "checkbox" id = "fever" value = "fever"name = "symptom" class = "checkbox">              
+                    <label for = "fever">Fever</label><br>
+                    
+                    <input type = "checkbox" id = "nausea" value = "nausea" name = "symptom" class = "checkbox">           
+                    <label for = "nausea">Nausea</label><br>
+
                 </fieldset>
 
-                <br><br>
+                <br>
                 
-                <label for = "comment" id = "comment-label">Please let us know any other symptom or problem you faced during or after the vaccination</label>
+                <label for = "comment" id = "comment-label">Please let us know any other symptom or problem you faced during or after the vaccination</label><br>
                 <textarea id = "comment" placeholder="Enter your comment here..." cols="50" rows="10"></textarea>
 
-                <input type="submit" value="SUBMIT">
+                <br><br>
+
+                <input type="submit" value="SUBMIT" id = "submit">
             </form>
         </main>
     </body>
