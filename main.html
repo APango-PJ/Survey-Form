@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <header>
+            <h1 id = "title">Post COVID-19 Vaccination Survey Form</h1>
+            <p id = "description">Thank You for taking the time to help collect data on the after effects of the COVID-19 vaccine.</p>
+        </header>
+        <main>
+            <form id = "survey-form">
+
+                <label for = "name" id = "name-label"> Name </label><br>
+                <input type = "text" id = "name" placeholder = "Enter Your Name">
+
+                <br><br>
+                
+                <label for = "email" id = "email-label"> Email </label><br>
+                <input type = "email" id = "email" placeholder = "Enter Your Name">
+                
+                <br><br>
+
+                <label for = "number" id = "number-label"> Age </label><br>
+                <input type = "number" id = "number" placeholder = "Enter Your Age" min = "45" max = "110">
+
+                <br><br>
+
+                <label for = "dropdown" id = "dropdown-label"> Which COVID-19 vaccine have you taken? </label><br>
+                <select id = "dropdown">
+                    <option>Pfizer-BioNTech</option>
+                    <option>Moderna</option>
+                    <option>Johnson & Johnson / Janssen</option>
+                    <option>Oxford, AstraZeneca (Covishield)</option>
+                    <option>Covaxin</option>
+                </select>
+
+                <br><br>
+
+                <label for = "gender" id = "gender"> Gender </label><br>
+
+            </form>
+        </main>
+    </body>
+</html>
