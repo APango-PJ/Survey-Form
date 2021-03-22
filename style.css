@@ -1,0 +1,31 @@
+header{
+    text-align: center;
+}
+body{
+    margin: 0% 30% 0% 30%;
+
+}
+#survey-form{
+    background-color: blueviolet;
+    padding: 35px;
+    border-radius: 1%;
+    background-color: #6A9CDE;
+}
+input{
+    width: 100%;
+}
+#submit{
+    width: 200px;
+}
+#date{
+    width: 200px;
+}
+.radio{
+    width: 20px;
+}
+.checkbox{
+    width: 20px;
+}
+fieldset{
+    border: 0px;
+}
