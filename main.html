@@ -12,17 +12,27 @@
             <form id = "survey-form">
 
                 <label for = "name" id = "name-label"> Name </label><br>
-                <input type = "text" id = "name" placeholder = "Enter Your Name">
+                <input type = "text" id = "name" placeholder = "Enter Your Name" required>
 
                 <br><br>
                 
                 <label for = "email" id = "email-label"> Email </label><br>
-                <input type = "email" id = "email" placeholder = "Enter Your Name">
+                <input type = "email" id = "email" placeholder = "Enter Your Email" required>
                 
                 <br><br>
 
                 <label for = "number" id = "number-label"> Age </label><br>
-                <input type = "number" id = "number" placeholder = "Enter Your Age" min = "45" max = "110">
+                <input type = "number" id = "number" placeholder = "Enter Your Age" min = "45" max = "110" required>
+
+                <br><br>
+
+                <fieldset id = "gender">
+
+                    <legend id = "gender-legend">Gender</legend><br>
+                    <input type = "radio" id = "male" name = "gender" value = "male"><label for = "male"> Male</label>
+                    <input type = "radio" id = "female" name = "gender" value = "female"><label for = "female"> Female</label>
+
+                </fieldset>
 
                 <br><br>
 
@@ -37,9 +47,33 @@
 
                 <br><br>
 
-                <label for = "gender" id = "gender"> Gender </label><br>
+                <label for = "date" id = "date-label">When did you get your vaccine?</label><br>
+                <input type="date" id = "date" required>                
 
+                <br><br>
+
+                <fieldset>
+                    
+                    <legend id = "symptom-legend">Did you have any of the following symptoms, within a week of the COVID-19 vaccination?</legend><br>
+                    <input type = "checkbox" id = "pain" value = "pain" name = "symptom">               <label for = "pain">Pain on the arm where you got the shot</label><br>
+                    <input type = "checkbox" id = "redness" value = "redness" name = "symptom">         <label for = "redness">Redness on the arm where you got the shot</label><br>
+                    <input type = "checkbox" id = "swelling" value = "swelling" name = "symptom">       <label for = "swelling">Swelling on the arm where you got the shot</label><br>
+                    <input type = "checkbox" id = "tiredness" value = "tiredness" name = "symptom">     <label for = "tiredness">Tiredness</label><br>
+                    <input type = "checkbox" id = "headache" value = "headache" name = "symptom">       <label for = "headache">Headache</label><br>
+                    <input type = "checkbox" id = "muscle-pain" value = "muscle-pain" name = "symptom"> <label for = "muscle-pain">Muscle Pain</label><br>
+                    <input type = "checkbox" id = "chills" value = "chills" name = "symptom">           <label for = "chills">Chills</label><br>
+                    <input type = "checkbox" id = "fever" value = "fever"name = "symptom">              <label for = "fever">Fever</label><br>
+                    <input type = "checkbox" id = "nausea" value = "nausea" name = "symptom">           <label for = "nausea">Nausea</label><br>
+                </fieldset>
+
+                <br><br>
+                
+                <label for = "comment" id = "comment-label">Please let us know any other symptom or problem you faced during or after the vaccination</label>
+                <textarea id = "comment" placeholder="Enter your comment here..." cols="50" rows="10"></textarea>
+
+                <input type="submit" value="SUBMIT">
             </form>
         </main>
     </body>
 </html>
+
